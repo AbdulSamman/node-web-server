@@ -1,4 +1,9 @@
-const message = `Welcome to this new Node.js site.`;
+import { camelCase } from "lodash-es";
+// welcomeToThisNewNode.jsSite
+
+const message = `Welcome to this new Node.js site, please enjoy`;
+
+const messageIdCode = camelCase(message);
 
 export const mainContent = `
 <!DOCTYPE html>
@@ -18,6 +23,7 @@ export const mainContent = `
 <body>
     <h1>Info Site</h1>
     <p>${message}.</p>
+    <p>${messageIdCode}.</p>
 </body>
 </html>
 
