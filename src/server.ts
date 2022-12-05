@@ -1,5 +1,5 @@
 import { createServer } from "http";
-import { mainContent } from "./content.js";
+import { mainContent } from "./content.js"; //content.ts => fehlermeldung, vite/react löst das
 const port = 3115;
 
 createServer((req, res) => {
